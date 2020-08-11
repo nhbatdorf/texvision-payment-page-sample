@@ -10,8 +10,38 @@ input {
   border-radius: 2vh;
 }
 
+.pay-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.pay-page > * {
+  flex-basis: calc(calc(800px - 100%) * 999);
+  flex-grow: 1;
+}
+
+.secure-seals {
+  display: flex;
+  justify-content: center;
+}
+
+.comodo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.card-imgs {
+  padding: 0.5em;
+}
 .cc-type {
-  height: 5vh;
+  width: 20%;
+  margin: 0.5em;
 }
 
 .so-inv-num {
@@ -19,11 +49,46 @@ input {
 }
 
 .amt {
+  font-size: 4vh;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 0.1em;
+  border-style: inset;
+  border-radius: 2vh;
+  border-color: #f1f1f1;
   width: 5.5em;
 }
 
 .cust-email {
   width: 13.5em;
+}
+
+.card-form-info {
+  border: 0.1em gray;
+  border-style: solid;
+  margin: 0.5em;
+  padding: 1em;
+}
+
+.card-num-div,
+.card-val-div,
+.card-cvv-div,
+.card-name-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-val-dates {
+  display: flex;
+}
+
+.num-cvv-combo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cvv-combo {
+  display: flex;
 }
 
 .card-number {
@@ -43,6 +108,21 @@ input {
 
 .cvv2 {
   width: 2.5em;
+}
+
+.cvv-help {
+  color: blue;
+  cursor: pointer;
+}
+
+.cvv-info {
+  opacity: 0;
+  position: absolute;
+}
+
+.rec-email {
+  display: flex;
+  flex-direction: column;
 }
 
 .so-inv-btn {

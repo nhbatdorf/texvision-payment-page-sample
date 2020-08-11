@@ -7,97 +7,137 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>MAKE A PAYMENT</h1>
-    <p>
-      We make it easy to pay sales orders and invoices online. All major credit
-      cards are accepted including Visa, MasterCard, Discover and American
-      Express.
-    </p>
-    <p>
-      Fill out the required fields below or log into your account to use a saved
-      credit card. Then, click the 'Pay' button. Be sure to only click the 'Pay'
-      button once to guarantee your credit card is not charged multiple times.
-    </p>
-    <p>
-      Once your payment has been submitted, you will receive a confirmation by
-      e-mail.
-    </p>
-    <image
-      class="cc-type"
-      src="https://www.texvisions.com/design_tool/data/test_logos/visa.png"
-    />
-    <image
-      class="cc-type"
-      src="https://www.texvisions.com/design_tool/data/test_logos/mastercard.png"
-    />
-    <image
-      class="cc-type"
-      src="https://www.texvisions.com/design_tool/data/test_logos/amex.png"
-    />
-    <image
-      class="cc-type"
-      src="https://www.texvisions.com/design_tool/data/test_logos/discover.png"
-    />
-    <image
-      src="https://www.texvisions.com/design_tool/data/test_logos/authorize_net.gif"
-    />
-    <image
-      src="https://www.texvisions.com/design_tool/data/test_logos/comodo-trusted-site-seal.png"
-    />
-    <a href="https://ssl.comodo.com/wildcard-ssl-certificates.php"
-      >Wildcard SSL</a
-    >
-    <h1>Sales Order / Invoice Information</h1>
-    <label>SO# / Invoice#</label>
-    <p>
-      Your invoice/order number is 10 characters long and ends with SO or SI. It
-      can be found at the top of your order confirmation or invoice statement.
-      Enter the 10 characters including underscores (ex: 000_000_SO or
-      000_000_SI). Do not include revision numbers.
-    </p>
-    <input class="so-inv-num" type="text" />
-    -
-    <input class="so-inv-num" type="text" />
-    -
-    <button class="so-inv-btn">I/O</button>
+    <div class="pay-page">
+      <div class="instructions">
+        <h1>MAKE A PAYMENT</h1>
+        <p>
+          We make it easy to pay sales orders and invoices online. All major
+          credit cards are accepted including Visa, MasterCard, Discover and
+          American Express.
+        </p>
+        <p>
+          Fill out the required fields below or log into your account to use a
+          saved credit card. Then, click the 'Pay' button. Be sure to only click
+          the 'Pay' button once to guarantee your credit card is not charged
+          multiple times.
+        </p>
+        <p>
+          Once your payment has been submitted, you will receive a confirmation
+          by e-mail.
+        </p>
+        <div class="card-imgs">
+          <image
+            class="cc-type"
+            src="https://www.texvisions.com/design_tool/data/test_logos/visa.png"
+          />
+          <image
+            class="cc-type"
+            src="https://www.texvisions.com/design_tool/data/test_logos/mastercard.png"
+          />
+          <image
+            class="cc-type"
+            src="https://www.texvisions.com/design_tool/data/test_logos/amex.png"
+          />
+          <image
+            class="cc-type"
+            src="https://www.texvisions.com/design_tool/data/test_logos/discover.png"
+          />
+        </div>
+        <div class="secure-seals">
+          <image
+            src="https://www.texvisions.com/design_tool/data/test_logos/authorize_net.gif"
+          />
+          <div class="comodo">
+            <image
+              src="https://www.texvisions.com/design_tool/data/test_logos/comodo-trusted-site-seal.png"
+            />
+            <a href="https://ssl.comodo.com/wildcard-ssl-certificates.php"
+              >Wildcard SSL</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <h1>Sales Order / Invoice Information</h1>
+        <label>SO# / Invoice#</label>
+        <p>
+          Your invoice/order number is 10 characters long and ends with SO or
+          SI. It can be found at the top of your order confirmation or invoice
+          statement. Enter the 6 numbers then click the 'I/O' button to toggle
+          between SI and SO. Do not include revision numbers.
+        </p>
+        <input class="so-inv-num" type="text" />
+        -
+        <input class="so-inv-num" type="text" />
+        -
+        <button class="so-inv-btn">I/O</button>
 
-    <label>Amount</label>
-    <p>
-      Enter the total amount of your order/invoice payment as indicated on your
-      order confirmation or invoice. Please enter this value without using
-      commas.
-    </p>
-    <input class="amt" type="text" />
-    <label>Send receipt to:</label>
-    <input class="cust-email" type="text" />
+        <div class="amt-div">
+          <label>Amount</label>
+          <p>
+            After entering your invoice/order number, the amount due is
+            displayed. If this number does not match your invoice, please
+            contact support.
+          </p>
+          <div class="amt"></div>
+        </div>
 
-    <label>New card</label>
-    <label>Card number</label>
-    <input class="card-number" type="text" />
-    <label>Valid thru (mm/yy)</label>
-    <input class="card-valid" type="text" />
-    /
-    <input class="card-valid" type="text" />
-    <label>Cardholder's name</label>
-    <input class="ch-name" type="text" />
-    <label>CVV2</label>
-    <input class="cvv2" type="text" />
-    <p>What is cvv2</p>
-    <div>
-      <img
-        src="https://www.texvisions.com/design/themes/responsive/media/images/visa_cvv.png"
-      />
-      <h2>Visa, Mastercard, Discover</h2>
-      <p>
-        This number is printed in the signature area on the back of the card. It
-        is the 3 digits AFTER the credit card number.
-      </p>
-      <img
-        src="https://www.texvisions.com/design/themes/responsive/media/images/express_cvv.png"
-      />
-      <h2>American Express</h2>
-      <p></p>
+        <div class="card-form">
+          <label>New card</label>
+          <div class="card-form-info">
+            <div class="num-cvv-combo">
+              <div class="card-num-div">
+                <label>Card number</label>
+                <input class="card-number" type="text" />
+              </div>
+              <div class="card-cvv-div">
+                <label>CVV2</label>
+                <div class="cvv-combo">
+                  <input class="cvv2" type="text" />
+                  <p class="cvv-help">What is cvv2</p>
+                  <div class="cvv-info">
+                    <img
+                      src="https://www.texvisions.com/design/themes/responsive/media/images/visa_cvv.png"
+                    />
+                    <h2>Visa, Mastercard, Discover</h2>
+                    <p>
+                      This number is printed in the signature area on the back
+                      of the card. It is the 3 digits AFTER the credit card
+                      number.
+                    </p>
+                    <img
+                      src="https://www.texvisions.com/design/themes/responsive/media/images/express_cvv.png"
+                    />
+                    <h2>American Express</h2>
+                    <p>
+                      CVV is on the front of the card above the credit card
+                      number (either on the right or on the left side of the
+                      credit card).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-val-div">
+              <label>Valid thru (mm/yy)</label>
+              <div class="card-val-dates">
+                <input class="card-valid" type="text" />
+                /
+                <input class="card-valid" type="text" />
+              </div>
+            </div>
+            <div class="card-name-div">
+              <label>Cardholder's name</label>
+              <input class="ch-name" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="rec-email">
+          <label>Send receipt to:</label>
+          <input class="cust-email" type="text" />
+        </div>
+        <button type="submit">PAY</button>
+      </div>
     </div>
-    <button type="submit">PAY</button>
   </body>
 </html>
