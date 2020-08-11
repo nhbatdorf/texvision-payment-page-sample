@@ -58,6 +58,15 @@
         </div>
       </div>
       <div class="form">
+        <div class="receipt">
+          <p>Payment Confirmed!</p>
+          <p>Email:</p>
+          <p>Amount:</p>
+          <p>Card Type:</p>
+          <p>**** **** **** ####</p>
+          <p>Expires:</p>
+          <p>Thank You!</p>
+        </div>
         <h1>Sales Order / Invoice Information</h1>
         <label>SO# / Invoice#</label>
         <p>
@@ -66,9 +75,9 @@
           statement. Enter the 6 numbers then click the 'I/O' button to toggle
           between SI and SO. Do not include revision numbers.
         </p>
-        <input class="so-inv-num" type="text" />
+        <input class="so-inv-num invOne" type="text" maxlength="3" />
         -
-        <input class="so-inv-num" type="text" />
+        <input class="so-inv-num invTwo" type="text" maxlength="3" />
         -
         <button class="so-inv-btn">I/O</button>
 
@@ -93,7 +102,7 @@
               <div class="card-cvv-div">
                 <label>CVV2</label>
                 <div class="cvv-combo">
-                  <input class="cvv2" type="text" />
+                  <input class="cvv2" type="text" maxlength="4" />
                   <p class="cvv-help">What is cvv2</p>
                   <div class="cvv-info">
                     <img
@@ -136,8 +145,12 @@
           <label>Send receipt to:</label>
           <input class="cust-email" type="text" />
         </div>
-        <button type="submit">PAY</button>
+        <div class="pay-btn-div">
+          <button class="pay-btn" type="submit">PAY</button>
+        </div>
       </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
