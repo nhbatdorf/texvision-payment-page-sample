@@ -1,0 +1,54 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 2vh;
+}
+
+input {
+  font-size: 2vh;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 2vh;
+}
+
+.cc-type {
+  height: 5vh;
+}
+
+.so-inv-num {
+  width: 2em;
+}
+
+.amt {
+  width: 5.5em;
+}
+
+.cust-email {
+  width: 13.5em;
+}
+
+.card-number {
+  width: 14em;
+  background-image: url("https://www.texvisions.com/design_tool/data/test_logos/blank_card.png");
+  background-position: 11em 0vh;
+  background-repeat: no-repeat;
+}
+
+.card-valid {
+  width: 1.5em;
+}
+
+.ch-name {
+  width: 13.5em;
+}
+
+.cvv2 {
+  width: 2.5em;
+}
+
+.so-inv-btn {
+  font-size: 2vh;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: white;
+  border-radius: 2vh;
+}

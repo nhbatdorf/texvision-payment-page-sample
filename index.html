@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make a Payment</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>MAKE A PAYMENT</h1>
+    <p>
+      We make it easy to pay sales orders and invoices online. All major credit
+      cards are accepted including Visa, MasterCard, Discover and American
+      Express.
+    </p>
+    <p>
+      Fill out the required fields below or log into your account to use a saved
+      credit card. Then, click the 'Pay' button. Be sure to only click the 'Pay'
+      button once to guarantee your credit card is not charged multiple times.
+    </p>
+    <p>
+      Once your payment has been submitted, you will receive a confirmation by
+      e-mail.
+    </p>
+    <image
+      class="cc-type"
+      src="https://www.texvisions.com/design_tool/data/test_logos/visa.png"
+    />
+    <image
+      class="cc-type"
+      src="https://www.texvisions.com/design_tool/data/test_logos/mastercard.png"
+    />
+    <image
+      class="cc-type"
+      src="https://www.texvisions.com/design_tool/data/test_logos/amex.png"
+    />
+    <image
+      class="cc-type"
+      src="https://www.texvisions.com/design_tool/data/test_logos/discover.png"
+    />
+    <image
+      src="https://www.texvisions.com/design_tool/data/test_logos/authorize_net.gif"
+    />
+    <image
+      src="https://www.texvisions.com/design_tool/data/test_logos/comodo-trusted-site-seal.png"
+    />
+    <a href="https://ssl.comodo.com/wildcard-ssl-certificates.php"
+      >Wildcard SSL</a
+    >
+    <h1>Sales Order / Invoice Information</h1>
+    <label>SO# / Invoice#</label>
+    <p>
+      Your invoice/order number is 10 characters long and ends with SO or SI. It
+      can be found at the top of your order confirmation or invoice statement.
+      Enter the 10 characters including underscores (ex: 000_000_SO or
+      000_000_SI). Do not include revision numbers.
+    </p>
+    <input class="so-inv-num" type="text" />
+    -
+    <input class="so-inv-num" type="text" />
+    -
+    <button class="so-inv-btn">I/O</button>
+
+    <label>Amount</label>
+    <p>
+      Enter the total amount of your order/invoice payment as indicated on your
+      order confirmation or invoice. Please enter this value without using
+      commas.
+    </p>
+    <input class="amt" type="text" />
+    <label>Send receipt to:</label>
+    <input class="cust-email" type="text" />
+
+    <label>New card</label>
+    <label>Card number</label>
+    <input class="card-number" type="text" />
+    <label>Valid thru (mm/yy)</label>
+    <input class="card-valid" type="text" />
+    /
+    <input class="card-valid" type="text" />
+    <label>Cardholder's name</label>
+    <input class="ch-name" type="text" />
+    <label>CVV2</label>
+    <input class="cvv2" type="text" />
+    <p>What is cvv2</p>
+    <div>
+      <img
+        src="https://www.texvisions.com/design/themes/responsive/media/images/visa_cvv.png"
+      />
+      <h2>Visa, Mastercard, Discover</h2>
+      <p>
+        This number is printed in the signature area on the back of the card. It
+        is the 3 digits AFTER the credit card number.
+      </p>
+      <img
+        src="https://www.texvisions.com/design/themes/responsive/media/images/express_cvv.png"
+      />
+      <h2>American Express</h2>
+      <p></p>
+    </div>
+    <button type="submit">PAY</button>
+  </body>
+</html>
