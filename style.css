@@ -119,7 +119,7 @@ a:link {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .cvv-help {
     display: none;
   }
