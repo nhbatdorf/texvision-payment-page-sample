@@ -8,6 +8,7 @@ input {
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 2vh;
+  border-color: #f1f1f1;
 }
 
 .pay-page {
@@ -49,14 +50,16 @@ a:link {
 }
 
 .amt {
-  font-size: 4vh;
+  font-size: 3vh;
   padding: 0.5em;
   margin: 0.5em;
   border: 0.1em;
   border-style: inset;
   border-radius: 2vh;
-  border-color: #f1f1f1;
-  width: 5.5em;
+  border-color: #be0318;
+  background-color: #bebebe;
+  width: 4em;
+  height: 1em;
 }
 
 .cust-email {
@@ -94,6 +97,7 @@ a:link {
 .card-number {
   width: 14em;
   background-image: url("https://www.texvisions.com/design_tool/data/test_logos/blank_card.png");
+  background-size: 3em;
   background-position: 11em 0vh;
   background-repeat: no-repeat;
 }
@@ -115,10 +119,22 @@ a:link {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 400px) {
+  .cvv-help {
+    display: none;
+  }
+}
+
 .cvv-info {
   opacity: 0;
-  position: absolute;
+  position: fixed;
+  bottom: 4vh;
+  right: 4vw;
+  background-color: #f1f1f1;
   z-index: -1;
+  display: flex;
+  width: 25vw;
+  height: 50vh;
 }
 
 .rec-email {
@@ -127,6 +143,7 @@ a:link {
 }
 
 .so-inv-btn {
+  width: 3.5em;
   font-size: 2vh;
   padding: 0.5em;
   margin: 0.5em;
@@ -134,9 +151,23 @@ a:link {
   border-radius: 2vh;
 }
 
+.so-inv-error {
+  color: #be0318;
+}
+
+.card-date-error {
+  color: #be0318;
+}
+
+.pay-error {
+  color: #be0318;
+}
+
 .pay-btn-div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 2em;
 }
 
@@ -148,8 +179,35 @@ a:link {
   border-radius: 2vh;
 }
 
+.receipt-container {
+  display: flex;
+  justify-content: center;
+}
+
 .receipt {
-  opacity: 0;
-  position: absolute;
+  display: none;
+  position: fixed;
+  padding: 1em 2em;
   z-index: -1;
+  background-color: #f1f1f1;
+  border-style: inset;
+  border-color: #be0318;
+  border-radius: 8vh;
+  opacity: 0.95;
+  font-size: 4vh;
+  width: 33%;
+  top: 5vh;
+}
+
+.rec-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  width: 8em;
+  font-size: 3vh;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 2vh;
 }
